@@ -2,9 +2,7 @@
 import {
   Carousel,
   CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  CarouselItem
 } from "@/components/ui/carousel";
 import { useToast } from "@/hooks/use-toast";
 import Autoplay from "embla-carousel-autoplay";
@@ -12,7 +10,6 @@ import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
   ArrowRight,
-  ChevronRight,
   Mail,
   Phone,
   MapPin,
@@ -27,9 +24,6 @@ import { Button } from "@/components/ui/button";
 import Particles from "@/components/Particles";
 export default function Home() {
   const { toast } = useToast();
-  const { scrollYProgress } = useScroll();
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -109,25 +103,25 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      title: "Développement d'une application mobile",
+      title: "Développement d&apos;une application mobile",
       description:
-        "Création d'une application mobile innovante pour améliorer l'expérience utilisateur.",
+        "Création d&apos;une application mobile innovante pour améliorer l&apos;expérience utilisateur.",
       image: "/assets/data.jpg",
       services: ["Développement mobile", "UX/UI Design", "Tests utilisateurs"],
     },
     {
       id: 2,
-      title: "Refonte d'un site web e-commerce",
+      title: "Refonte d&apos;un site web e-commerce",
       description:
-        "Modernisation d'un site e-commerce pour augmenter les ventes et améliorer la navigation.",
+        "Modernisation d&apos;un site e-commerce pour augmenter les ventes et améliorer la navigation.",
       image: "/assets/meeting.jpg",
       services: ["Web Design", "SEO", "Optimisation des performances"],
     },
     {
       id: 3,
-      title: "Mise en place d'un système CRM",
+      title: "Mise en place d&apos;un système CRM",
       description:
-        "Implémentation d'un système CRM personnalisé pour mieux gérer les relations clients.",
+        "Implémentation d&apos;un système CRM personnalisé pour mieux gérer les relations clients.",
       image: "/assets/business.jpg",
       services: [
         "Développement de logiciels",
@@ -149,17 +143,17 @@ export default function Home() {
     },
     {
       id: 5,
-      title: "Création d'une plateforme de réservation en ligne",
+      title: "Création d&apos;une plateforme de réservation en ligne",
       description:
-        "Développement d'une plateforme de réservation intuitive pour faciliter les réservations.",
+        "Développement d&apos;une plateforme de réservation intuitive pour faciliter les réservations.",
       image: "/assets/formation.jpg",
       services: ["Développement web", "UX/UI Design", "Tests et déploiement"],
     },
     {
       id: 6,
-      title: "Développement d'une application mobile",
+      title: "Développement d&apos;une application mobile",
       description:
-        "Création d'une application mobile innovante pour améliorer l'expérience utilisateur.",
+        "Création d&apos;une application mobile innovante pour améliorer l&apos;expérience utilisateur.",
       image: "/assets/data.jpg",
       services: ["Développement mobile", "UX/UI Design", "Tests utilisateurs"],
     },
@@ -238,8 +232,8 @@ export default function Home() {
               <p className="mb-6 text-gray-600 leading-relaxed">
                 {" "}
                 LTM Consulting a été fondée en 2010 avec la vision de
-                révolutionner le conseil aux entreprises. Notre équipe d'experts
-                apporte des décennies d'expérience dans divers secteurs, ce qui
+                révolutionner le conseil aux entreprises. Notre équipe d&apos;experts
+                apporte des décennies d&apos;expérience dans divers secteurs, ce qui
                 nous permet de fournir des idées et des stratégies inégalées à
                 nos clients.{" "}
               </p>{" "}
@@ -383,7 +377,7 @@ export default function Home() {
                 company: "Finance Corp",
                 rating: 4,
                 testimonial:
-                  "Une excellente expérience de travail avec LTM Consulting. Leur équipe est compétente et réactive, bien qu'il y ait eu quelques retards mineurs.",
+                  "Une excellente expérience de travail avec LTM Consulting. Leur équipe est compétente et réactive, bien qu&apos;il y ait eu quelques retards mineurs.",
                 img: "/assets/homme.png",
               },
               {
@@ -392,7 +386,7 @@ export default function Home() {
                 rating: 5,
                 testimonial:
                   "Je suis extrêmement satisfaite des services fournis par LTM Consulting. Ils ont dépassé nos attentes et nous ont aidés à atteindre nos objectifs.",
-                img: "/assets/homme.jpg",
+                img: "/assets/homme.PNG",
               },
               {
                 name: "Elise Brown",
@@ -400,7 +394,7 @@ export default function Home() {
                 rating: 5,
                 testimonial:
                   "Une collaboration fructueuse avec LTM Consulting. Leur compréhension de nos besoins était impressionnante et le résultat final était au-delà de nos espérances.",
-                img: "/assets/femme_noire.jpg",
+                img: "/assets/femme2.jpg",
               },
             ].map((testimonial, index) => (
               <motion.div
@@ -427,7 +421,7 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="mb-4 text-gray-700">
-                  "{testimonial.testimonial}"
+                &quot;{testimonial.testimonial}&quot;
                 </p>
                 <div className="flex">
                   {[...Array(testimonial.rating)].map((_, i) => (
@@ -475,7 +469,7 @@ export default function Home() {
               </h3>
               <p className="mb-6 text-gray-600">
                 Notre logo représente la nature dynamique et innovante de LTM
-                Consulting. L'efficacité et la simplicité impose les bases d'une
+                Consulting. L&apos;efficacité et la simplicité impose les bases d&apos;une
                 fondation solide. Réprésentation de la confiance que nous créons
                 avec nos clients.
               </p>
@@ -640,14 +634,14 @@ export default function Home() {
               variants={fadeInUp}
             >
               <div className="flex flex-col space-y-6">
-                <Input type="text" placeholder="Your Name" className="w-full" />
+                <Input type="text" placeholder="Nom" className="w-full" />
                 <Input
                   type="email"
-                  placeholder="Your Email"
+                  placeholder="Email"
                   className="w-full"
                 />
                 <Textarea
-                  placeholder="Your Message"
+                  placeholder="Message"
                   className="w-full"
                   rows={4}
                 />
@@ -752,7 +746,7 @@ export default function Home() {
             <form className="flex flex-col sm:flex-row gap-4">
               <Input
                 type="email"
-                placeholder="Your Email"
+                placeholder="Email"
                 className="flex-grow"
               />
               <Button
