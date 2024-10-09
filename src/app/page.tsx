@@ -281,7 +281,7 @@ export default function Home() {
       Thomas Bodon, fondateur de LTM Consulting, a toujours cru en une approche collaborative et personnalisée pour chaque client. Sa démarche repose sur l&apos;innovation et la création de solutions sur-mesure adaptées aux besoins spécifiques de chaque entreprise. Avec un engagement inébranlable envers la qualité et le succès, Thomas et son équipe veillent à ce que chaque projet soit une réussite partagée.
     </p>
     <blockquote className="italic text-gray-700 mt-4">
-      "Notre plus grand accomplissement est de voir nos clients atteindre des sommets qu&apos;ils n&apos;auraient jamais imaginés."
+    &quot;Notre plus grand accomplissement est de voir nos clients atteindre des sommets qu&apos;ils n&apos;auraient jamais imaginés.&quot;
     </blockquote>
   </div>
 </CarouselItem>
@@ -300,7 +300,7 @@ export default function Home() {
       Lucas Dupetit, co-fondateur de LTM Consulting, est un visionnaire passionné par l&apos;innovation et la technologie. Sa philosophie repose sur l&apos;intégration des dernières avancées technologiques pour offrir à chaque client une solution moderne et pérenne. Lucas croit fermement que la réussite vient de l&apos;écoute et de la capacité à anticiper les besoins futurs des entreprises.
     </p>
     <blockquote className="italic text-gray-700 mt-4">
-      "L&apos;innovation n&apos;est pas une option, c&apos;est une nécessité pour les entreprises qui veulent prospérer."
+    &quot;L&apos;innovation n&apos;est pas une option, c&apos;est une nécessité pour les entreprises qui veulent prospérer.&quot;
     </blockquote>
   </div>
 </CarouselItem>
