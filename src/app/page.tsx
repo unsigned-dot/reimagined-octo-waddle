@@ -91,25 +91,25 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      title: "Développement d&apos;une application mobile",
+      title: "Développement d'une application mobile",
       description:
-        "Création d&apos;une application mobile innovante pour améliorer l&apos;expérience utilisateur.",
+        "Création d'une application mobile innovante pour améliorer l'expérience utilisateur.",
       image: "/assets/data.jpg",
       services: ["Développement mobile", "UX/UI Design", "Tests utilisateurs"],
     },
     {
       id: 2,
-      title: "Refonte d&apos;un site web e-commerce",
+      title: "Refonte d'un site web e-commerce",
       description:
-        "Modernisation d&apos;un site e-commerce pour augmenter les ventes et améliorer la navigation.",
+        "Modernisation d'un site e-commerce pour augmenter les ventes et améliorer la navigation.",
       image: "/assets/meeting.jpg",
       services: ["Web Design", "SEO", "Optimisation des performances"],
     },
     {
       id: 3,
-      title: "Mise en place d&apos;un système CRM",
+      title: "Mise en place d'un système CRM",
       description:
-        "Implémentation d&apos;un système CRM personnalisé pour mieux gérer les relations clients.",
+        "Implémentation d'un système CRM personnalisé pour mieux gérer les relations clients.",
       image: "/assets/business.jpg",
       services: [
         "Développement de logiciels",
@@ -203,9 +203,9 @@ export default function Home() {
               À Propos de Nous
             </h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
-          </motion.div>{" "}
+          </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            {" "}
+            
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -213,18 +213,18 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               variants={fadeInUp}
             >
-              {" "}
+              
               <h3 className="text-2xl font-semibold mb-4 text-blue-600">
                 Notre Histoire
-              </h3>{" "}
+              </h3>
               <p className="mb-6 text-gray-600 leading-relaxed">
-                {" "}
+                
                 LTM Consulting a été fondée en 2018 avec la vision de
                 révolutionner le conseil aux entreprises. Notre équipe d&apos;experts
                 apporte des décennies d&apos;expérience dans divers secteurs, ce qui
                 nous permet de fournir des idées et des stratégies inégalées à
-                nos clients.{" "}
-              </p>{" "}
+                nos clients.
+              </p>
               <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -232,7 +232,7 @@ export default function Home() {
                 variants={staggerChildren}
                 className="space-y-4"
               >
-                {" "}
+                
                 {[
                   "Innovation",
                   "Intégrité",
@@ -244,13 +244,13 @@ export default function Home() {
                     variants={fadeInUp}
                     className="flex items-center"
                   >
-                    {" "}
-                    <ArrowRight className="text-blue-600 mr-2" />{" "}
-                    <span>{value}</span>{" "}
+                    
+                    <ArrowRight className="text-blue-600 mr-2" />
+                    <span>{value}</span>
                   </motion.div>
-                ))}{" "}
-              </motion.div>{" "}
-            </motion.div>{" "}
+                ))}
+              </motion.div>
+            </motion.div>
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -259,41 +259,63 @@ export default function Home() {
               variants={fadeInUp}
               className="relative"
             >
-              {" "}
+              
               <Carousel
                 plugins={[Autoplay({ delay: 2000 })]}
-                className="h-64 w-full"
+                className=" w-full"
               >
-                {" "}
+                
                 <CarouselContent>
-                  {" "}
-                  <CarouselItem className="flex items-center justify-center">
-                    {" "}
-                    <img
-                      src="/assets/homme.png"
-                      alt="Homme"
-                      className="h-50 object-cover rounded-lg"
-                    />{" "}
-                  </CarouselItem>{" "}
-                  <CarouselItem className="flex items-center justify-center">
-                    {" "}
-                    <img
-                      src="/assets/femme.png"
-                      alt="Femme"
-                      className="rounded-lg"
-                    />{" "}
-                  </CarouselItem>{" "}
-                </CarouselContent>{" "}
-              </Carousel>{" "}
-            </motion.div>{" "}
-          </div>{" "}
-        </div>{" "}
-      </section>{" "}
-      {/* Services Section */}{" "}
+                  
+                  <CarouselItem className="flex flex-col items-center justify-center p-4 md:flex-row md:p-8">
+  <img
+    src="/assets/thomas.png"
+    alt="Homme"
+    className="h-40 object-contain md:h-48 md:w-auto"
+  />
+  <div className="mt-4 text-center md:ml-6 md:mt-0 md:text-left">
+    <h2 className="text-xl font-bold underline">
+      Thomas Bodon
+    </h2>
+    <p className="text-sm md:text-base mt-2">
+      Thomas Bodon, fondateur de LTM Consulting, a toujours cru en une approche collaborative et personnalisée pour chaque client. Sa démarche repose sur l'innovation et la création de solutions sur-mesure adaptées aux besoins spécifiques de chaque entreprise. Avec un engagement inébranlable envers la qualité et le succès, Thomas et son équipe veillent à ce que chaque projet soit une réussite partagée.
+    </p>
+    <blockquote className="italic text-gray-700 mt-4">
+      "Notre plus grand accomplissement est de voir nos clients atteindre des sommets qu'ils n'auraient jamais imaginés."
+    </blockquote>
+  </div>
+</CarouselItem>
+
+<CarouselItem className="flex flex-col items-center justify-center p-4 md:flex-row md:p-8">
+  <img
+    src="/assets/lucas.jpg"
+    alt="Homme"
+    className="h-40 object-contain md:h-48 md:w-auto"
+  />
+  <div className="mt-4 text-center md:ml-6 md:mt-0 md:text-left">
+    <h2 className="text-xl font-bold underline">
+      Lucas Dupetit
+    </h2>
+    <p className="text-sm md:text-base mt-2">
+      Lucas Dupetit, co-fondateur de LTM Consulting, est un visionnaire passionné par l'innovation et la technologie. Sa philosophie repose sur l'intégration des dernières avancées technologiques pour offrir à chaque client une solution moderne et pérenne. Lucas croit fermement que la réussite vient de l'écoute et de la capacité à anticiper les besoins futurs des entreprises.
+    </p>
+    <blockquote className="italic text-gray-700 mt-4">
+      "L'innovation n'est pas une option, c'est une nécessité pour les entreprises qui veulent prospérer."
+    </blockquote>
+  </div>
+</CarouselItem>
+
+                </CarouselContent>
+              </Carousel>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+      {/* Services Section */}
       <section className="py-20 bg-gray-50 overflow-hidden px-16">
-        {" "}
+        
         <div className="container mx-auto px-4">
-          {" "}
+          
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -587,7 +609,7 @@ export default function Home() {
                         className="w-1/3 md:w-1/4 lg:w-1/3 object-cover rounded-lg mr-4" // Responsive image size
                       />
                       <div className="flex flex-col">
-                        {" "}
+                        
                         {/* Conteneur pour le texte */}
                         <h3 className="text-xl font-semibold mt-2 text-blue-600">
                           {project.title}
