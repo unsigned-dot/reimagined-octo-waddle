@@ -482,7 +482,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               variants={fadeInUp}
             >
-              <span className="font-bold md:text-6xl text-3xl">LTM Consulting ©</span>
+              <span className="font-bold md:text-6xl text-3xl">LTM Consulting©</span>
               <h3 className="text-2xl font-semibold mb-4 mt-6 text-blue-600">
                 Logo
               </h3>
@@ -572,61 +572,64 @@ export default function Home() {
         </div>
       </section>
       {/* Projets Réalisés */}
-      <section className="py-20 bg-white px-16 overflow-hidden">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            variants={fadeInUp}
-            className="text-center mb-12"
-          >
-            <h2 className="text-4xl font-bold mb-4 text-gray-800">
-              Nos Réalisations
-            </h2>
-            <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
-          </motion.div>
-          <div className="w-screen flex">
-            <Carousel plugins={[Autoplay({ delay: 4000 })]} className="h-auto">
-              <CarouselContent>
-                {projects.map((project) => (
-                  <CarouselItem
-                    key={project.id}
-                    className="flex justify-center items-center w-full md:basis-1/2"
-                  >
-                    <motion.div
-                      initial="hidden"
-                      whileInView="visible"
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.6 }}
-                      variants={fadeInUp}
-                      className="flex items-center p-4 w-full"
-                    >
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="w-1/3 md:w-1/4 lg:w-1/3 object-cover rounded-lg mr-4" // Responsive image size
-                      />
-                      <div className="flex flex-col">
-                        
-                        {/* Conteneur pour le texte */}
-                        <h3 className="text-xl font-semibold mt-2 text-blue-600">
-                          {project.title}
-                        </h3>
-                        <p className="text-gray-600">{project.description}</p>
-                        <p className="text-sm text-gray-500">
-                          {project.services.join(", ")}
-                        </p>
-                      </div>
-                    </motion.div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
-          </div>
-        </div>
-      </section>
+      <section className="py-16 px-4 sm:px-8 md:px-16 lg:py-20 bg-white overflow-hidden">
+  <div className="container mx-auto">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      variants={fadeInUp}
+      className="text-center mb-8 sm:mb-12"
+    >
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+        Nos Réalisations
+      </h2>
+      <div className="w-16 h-1 sm:w-24 bg-blue-600 mx-auto"></div>
+    </motion.div>
+    
+    <div className="w-full flex">
+      <Carousel plugins={[Autoplay({ delay: 4000 })]} className="h-auto w-full">
+        <CarouselContent>
+          {projects.map((project) => (
+            <CarouselItem
+              key={project.id}
+              className="flex justify-center items-center w-full md:basis-1/2"
+            >
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                variants={fadeInUp}
+                className="flex flex-col md:flex-row items-center p-4 md:p-6 w-full"
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-1/2  md:w-1/4  object-cover rounded-lg mb-4 md:mb-0 md:mr-4" // Responsive image size
+                />
+                <div className="flex flex-col items-center md:items-start text-center md:text-left">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mt-2 text-blue-600">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm sm:text-base text-gray-600">
+                    {project.description}
+                  </p>
+                  <p className="text-xs sm:text-sm text-gray-500 mt-2">
+                    {project.services.join(", ")}
+                  </p>
+                </div>
+
+              </motion.div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
+    </div>
+  </div>
+</section>
+
       {/* Contact Section */}
       <section className="py-20 bg-white px-16">
         <div className="container mx-auto px-4">
@@ -701,7 +704,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-6 h-6 mr-4 text-blue-600" />
-                  <p className="text-gray-600">+1 (123) 456-7890</p>
+                  <p className="text-gray-600">+33 1 26 52 85 36</p>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-6 h-6 mr-4 text-blue-600" />
@@ -755,7 +758,7 @@ export default function Home() {
             className="max-w-2xl mx-auto text-center"
           >
             <h2 className="text-3xl font-bold mb-4 text-gray-800">
-              Restez informé !
+              Restez informé
             </h2>
             <p className="mb-6 text-gray-600">
               Abonnez-vous à notre newsletter pour recevoir les dernières
