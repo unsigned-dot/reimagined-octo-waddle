@@ -54,48 +54,36 @@ export default function Home() {
       name: "Planification Stratégique",
       description:
         "Développez des stratégies complètes pour atteindre vos objectifs commerciaux.",
-      longDescription:
-        "Notre service de Planification Stratégique fournit aux entreprises des stratégies sur mesure conçues pour répondre à des objectifs spécifiques. Nous réalisons une analyse approfondie de votre position actuelle, identifions des opportunités et créons une feuille de route qui s’aligne sur votre vision à long terme. Que vous souhaitiez vous développer, entrer sur de nouveaux marchés ou optimiser vos opérations, nous vous aidons à créer des plans clairs et actionnables qui génèrent des résultats.",
       img: "/assets/business.jpg",
     },
     {
       name: "Analyse Financière",
       description:
         "Évaluations financières approfondies pour optimiser la performance de votre entreprise.",
-      longDescription:
-        "Notre service d’Analyse Financière implique des évaluations détaillées de la santé financière de votre entreprise. Nous examinons vos états financiers, évaluons la rentabilité, identifions les opportunités d’économies et fournissons des recommandations pour améliorer votre résultat net. De la budgétisation à la prévision, nous veillons à ce que vos opérations financières soient en adéquation avec votre stratégie commerciale globale.",
       img: "/assets/data.jpg",
     },
     {
       name: "Recherche de Marché",
       description:
         "Obtenez des informations précieuses sur votre marché cible et vos concurrents.",
-      longDescription:
-        "Notre service de Recherche de Marché vous aide à comprendre le paysage de votre marché. Nous rassemblons et analysons des données sur le comportement des clients, les tendances du secteur et les concurrents pour fournir des informations exploitables. Avec nos rapports détaillés, vous pouvez prendre des décisions éclairées concernant le développement de produits, les stratégies de prix et le positionnement sur le marché, garantissant que votre entreprise reste en tête de la concurrence.",
       img: "/assets/dev.jpg",
     },
     {
       name: "Transformation Digitale",
       description:
         "Modernisez vos processus d’entreprise avec des technologies de pointe.",
-      longDescription:
-        "Notre service de Transformation Digitale permet aux entreprises d’exploiter la technologie moderne pour optimiser les opérations. De l’automatisation des flux de travail à l’intégration de solutions cloud, nous vous guidons à chaque étape de la transformation. Notre objectif est d’améliorer l’efficacité, d’améliorer l’expérience client et de garder votre entreprise à la pointe de l’innovation technologique.",
       img: "/assets/meeting.jpg",
     },
     {
       name: "Développement du Leadership",
       description:
         "Renforcez vos leaders avec les compétences nécessaires pour réussir.",
-      longDescription:
-        "Notre service de Développement du Leadership est conçu pour améliorer les compétences des leaders de votre entreprise. Nous proposons des programmes de formation axés sur l’amélioration de la prise de décision, de la communication et des compétences en travail d’équipe. Que vous prépariez de futurs leaders ou que vous renforciez les capacités des dirigeants actuels, nous aidons à construire une équipe de direction capable de faire progresser votre entreprise.",
       img: "/assets/analyse.jpeg",
     },
     {
       name: "Optimisation des Processus",
       description:
         "Rationalisez vos opérations pour une efficacité et une productivité maximales.",
-      longDescription:
-        "Notre service d’Optimisation des Processus se concentre sur l’amélioration de l’efficacité de vos processus d’entreprise. Nous analysons les flux de travail, identifions les goulots d’étranglement et mettons en œuvre des solutions qui réduisent les coûts et améliorent la productivité. Que ce soit par l’automatisation, la restructuration ou la formation du personnel, nous veillons à ce que votre entreprise fonctionne de manière fluide et efficace.",
       img: "/assets/support.jpeg",
     },
   ];
@@ -143,17 +131,17 @@ export default function Home() {
     },
     {
       id: 5,
-      title: "Création d&apos;une plateforme de réservation en ligne",
+      title: "Création d'une plateforme de réservation en ligne",
       description:
-        "Développement d&apos;une plateforme de réservation intuitive pour faciliter les réservations.",
+        "Développement d'une plateforme de réservation intuitive pour faciliter les réservations.",
       image: "/assets/formation.jpg",
       services: ["Développement web", "UX/UI Design", "Tests et déploiement"],
     },
     {
       id: 6,
-      title: "Développement d&apos;une application mobile",
+      title: "Développement d'une application mobile",
       description:
-        "Création d&apos;une application mobile innovante pour améliorer l&apos;expérience utilisateur.",
+        "Création d'une application mobile innovante pour améliorer l'expérience utilisateur.",
       image: "/assets/data.jpg",
       services: ["Développement mobile", "UX/UI Design", "Tests utilisateurs"],
     },
@@ -231,7 +219,7 @@ export default function Home() {
               </h3>{" "}
               <p className="mb-6 text-gray-600 leading-relaxed">
                 {" "}
-                LTM Consulting a été fondée en 2010 avec la vision de
+                LTM Consulting a été fondée en 2018 avec la vision de
                 révolutionner le conseil aux entreprises. Notre équipe d&apos;experts
                 apporte des décennies d&apos;expérience dans divers secteurs, ce qui
                 nous permet de fournir des idées et des stratégies inégalées à
@@ -364,39 +352,48 @@ export default function Home() {
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              {
-                name: "Alice Johnson",
-                company: "Tech Co",
-                rating: 5,
-                testimonial:
-                  "LTM Consulting a fourni un service exceptionnel et a livré des résultats remarquables. Leur expertise et leur dévouement ont été déterminants dans notre succès.",
-                img: "/assets/femme.png",
-              },
-              {
-                name: "Bob Smith",
-                company: "Finance Corp",
-                rating: 4,
-                testimonial:
-                  "Une excellente expérience de travail avec LTM Consulting. Leur équipe est compétente et réactive, bien qu&apos;il y ait eu quelques retards mineurs.",
-                img: "/assets/homme.png",
-              },
-              {
-                name: "Rémi Chazel",
-                company: "Divers Inc",
-                rating: 5,
-                testimonial:
-                  "Je suis extrêmement satisfaite des services fournis par LTM Consulting. Ils ont dépassé nos attentes et nous ont aidés à atteindre nos objectifs.",
-                img: "/assets/homme.PNG",
-              },
-              {
-                name: "Elise Brown",
-                company: "Healthcare Ltd",
-                rating: 5,
-                testimonial:
-                  "Une collaboration fructueuse avec LTM Consulting. Leur compréhension de nos besoins était impressionnante et le résultat final était au-delà de nos espérances.",
-                img: "/assets/femme2.jpg",
-              },
-            ].map((testimonial, index) => (
+  {
+    "name": "Pierre Duval",
+    "company": "Le Slip Français",
+    "sector": "Mode et habillement",
+    "rating": 5,
+    "testimonial": "LTM Consulting a été un partenaire clé dans notre transformation numérique. Grâce à leur expertise, nous avons pu optimiser notre site e-commerce et renforcer notre présence en ligne. Leur équipe est très réactive et créative.",
+    "img": "/assets/pierre_duval.JPG"
+  },
+  {
+    "name": "Marie Lefèvre",
+    "company": "La Belle Assiette",
+    "sector": "Service de traiteur",
+    "rating": 4,
+    "testimonial": "Travailler avec LTM Consulting a grandement simplifié la gestion de nos événements. Leurs solutions techniques nous ont permis de mieux organiser nos chefs à domicile. Quelques ajustements ont été nécessaires, mais dans l'ensemble, le service est excellent.",
+    "img": "/assets/marie_lefevre.JPG"
+  },
+  {
+    "name": "Nicolas Bernard",
+    "company": "Alan",
+    "sector": "Assurance santé",
+    "rating": 5,
+    "testimonial": "LTM Consulting nous a aidés à renforcer nos processus internes avec des solutions innovantes. Leur accompagnement technique nous a permis de mieux structurer notre croissance tout en maintenant une expérience utilisateur fluide. Une équipe professionnelle et attentive.",
+    "img": "/assets/nicolas_bernard.JPG"
+  },
+  {
+    "name": "Camille Dubois",
+    "company": "Cuvée Privée",
+    "sector": "Vin et adoption de vignes",
+    "rating": 5,
+    "testimonial": "Grâce à LTM Consulting, nous avons modernisé notre site web et simplifié notre gestion des abonnés. Leur équipe a parfaitement compris nos besoins et a su apporter des solutions sur mesure. Nous sommes très satisfaits des résultats.",
+    "img": "/assets/camille_dubois.JPG"
+  },
+  {
+    "name": "Thomas Laurent",
+    "company": "Deskopolitan",
+    "sector": "Coworking",
+    "rating": 4,
+    "testimonial": "LTM Consulting a su s'adapter à nos demandes spécifiques et nous a aidés à améliorer la gestion de nos espaces de coworking. Il y a eu quelques défis techniques, mais l'équipe a été très proactive dans la résolution des problèmes.",
+    "img": "/assets/thomas_laurent.JPG"
+  }
+]
+.map((testimonial, index) => (
               <motion.div
                 key={index}
                 className="bg-gray-50 rounded-lg p-6 shadow-md"
@@ -463,7 +460,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               variants={fadeInUp}
             >
-              <span className="font-bold text-6xl">LTM Consulting ©</span>
+              <span className="font-bold md:text-6xl text-3xl">LTM Consulting ©</span>
               <h3 className="text-2xl font-semibold mb-4 mt-6 text-blue-600">
                 Logo
               </h3>
@@ -506,8 +503,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gray-50 px-16">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-gray-50 flex justify-center">
+        <div className="w-full">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -519,7 +516,6 @@ export default function Home() {
             <h2 className="text-4xl font-bold mb-4 text-gray-800">
               Nos Partenaires de confiance
             </h2>
-            <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
           </motion.div>
 
           {/* Bordereau de Logos */}
