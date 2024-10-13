@@ -268,11 +268,7 @@ export default function Home() {
                 <CarouselContent>
                   
                   <CarouselItem className="flex flex-col items-center justify-center p-4 md:flex-row md:p-8">
-  <img
-    src="/assets/thomas.png"
-    alt="Homme"
-    className="h-40 object-contain md:h-48 md:w-auto"
-  />
+  
   <div className="mt-4 text-center md:ml-6 md:mt-0 md:text-left">
     <h2 className="text-xl font-bold underline">
       Thomas Bodon
@@ -287,11 +283,6 @@ export default function Home() {
 </CarouselItem>
 
 <CarouselItem className="flex flex-col items-center justify-center p-4 md:flex-row md:p-8">
-  <img
-    src="/assets/lucas.jpg"
-    alt="Homme"
-    className="h-40 object-contain md:h-48 md:w-auto"
-  />
   <div className="mt-4 text-center md:ml-6 md:mt-0 md:text-left">
     <h2 className="text-xl font-bold underline">
       Lucas Dupetit
